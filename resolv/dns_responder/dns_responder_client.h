@@ -87,6 +87,8 @@ public:
             std::vector<std::unique_ptr<test::DNSResponder>>* dns,
             std::vector<std::string>* servers);
 
+    static void ShutdownDNSServers(std::vector<std::unique_ptr<test::DNSResponder>>* dns);
+
     int SetupOemNetwork();
 
     void TearDownOemNetwork(int oemNetId);

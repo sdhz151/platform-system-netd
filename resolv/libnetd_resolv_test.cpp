@@ -23,9 +23,7 @@
 #include <netdb.h>
 
 #include "dns_responder.h"
-#include "getaddrinfo.h"
-#include "gethnamaddr.h"
-#include "resolv_cache.h"
+#include "netd_resolv/resolv.h"
 
 // TODO: make this dynamic and stop depending on implementation details.
 constexpr unsigned int TEST_NETID = 30;

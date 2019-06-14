@@ -76,6 +76,7 @@ public:
 
     void TearDown(const ::benchmark::State& state) override {
         if (state.thread_index == 0) {
+            dns.ShutdownDNSServers(&mDns);
             dns.TearDown();
         }
     }

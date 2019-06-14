@@ -28,7 +28,6 @@
 
 #include "DnsResolver.h"
 #include "NetdConstants.h"  // ScopedAddrinfo
-#include "getaddrinfo.h"
 #include "netd_resolv/resolv.h"
 #include "netdutils/BackoffSequence.h"
 #include "netdutils/DumpWriter.h"
